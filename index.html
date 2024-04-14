@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+    <!-- *******stylesheets****** -->
+    <link rel="stylesheet" href="style.css">
+    <!-- *******scrpits*********** -->
+    <script src="script.js" type="module" defer></script>
+    <script src="getDesignation.js" type="module" defer></script>
+    <script src="AddEmployee.js" type="module" defer></script>
+    <script src="validation.js" type="module" defer></script>
+    <script src="ErrorMessage.js" type="module" defer></script>
+    <script src="EmployeeList.js" type="module" defer></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="top-line"></div>
+        <header>
+            <!-- *******header********* -->
+            <img id="logo" src="images/image.png" alt="Logo">
+            <p id="emp-head">Employee Details</p>
+        </header>
+        <div id="body-container">
+            <div id="text-left">
+                <!-- *******left partition box************ -->
+                <h3>DESIGNATION GUIDE</h3>
+                1. Office Manager <br>
+                2. Administrative assistant <br>
+                3. Intern <br>
+                4. Accountant <br>
+                5. Customer Service Representative <br><br>
+
+                <h3>WRITTEN BY</h3>
+                Namitha Burnapelly<br>
+                Packaged App Manager - Intern<br>
+                <img src="images/linkedin.png" alt="linkedin" class="social">
+                <br><br>
+
+                Om Vipul<br>
+                Lead - Strategy<br>
+                <img src="images/linkedin.png" alt="linkedin" class="social">
+                <br><br>
+
+                Oliver Wright <br>
+                Senior Managing Director - Consumer Goods & Services, Global Lead <br>
+                <img src="images/linkedin.png" alt="linkedin" class="social">
+                <br><br>
+
+            </div>
+
+            <div>
+                <div id="container1">
+                    <fieldset>
+                        <h2>Employee Form</h2>
+                        <br>
+                        <!-- *********employee form********* -->
+                        <form action="#" id="myForm">
+                            <!-- ******employee name****** -->
+                            <label for="employeeName">Employee Name <span id="asterik">*</span></label><br>
+                            <input type="text" id="employeeName" name="employeeName" required
+                                pattern="[a-zA-Z]+(?:[\s][a-zA-Z]+)*" title="Enter a valid Name" value="namitha">
+                            <br>
+                            <span id="error-message-name"></span>
+                            <br>
+                            <!-- *******employee designation******** -->
+                            <label for="designation">Employee Designation <span id="asterik">*</span></label><br>
+                            <input type="text" id="designation" name="designation" required
+                                pattern="[a-zA-Z]+(?:[\s][a-zA-Z]+)*" title="Enter a valid Designation"
+                                title="Enter a valid Designation." value="intern"><br>
+                            <span id="error-message-designation"></span>
+
+                            <br>
+                            <!-- ********employee location********* -->
+                            <label for="location">Employee Location <span id="asterik">*</span></label><br>
+                            <select name="locaiton" id="location" required>
+                                <!-- <option value="pune" ></option> -->
+                                <option value="" selected disabled>Choose..</option>
+                                <option value="pune">Pune</option>
+                                <option value="hyderabad">Hyderabad</option>
+                                <option value="bengluru">Bengluru</option>
+                                <option value="coimbatore">Coimbatore</option>
+                                <option value="mumbai">Mumbai</option>
+                                <option value="chennai">Chennai</option>
+                                <option value="noida">Noida</option>
+                                <option value="indore">Indore</option>
+                                <option value="jaipur">Jaipur</option>
+                            </select>
+                            <br><br>
+                            <!-- ******employee salary******** -->
+                            <label for="salary">Salary <span id="asterik">*</span></label> <br>
+                            <input type="number" name="salary" id="salary" required
+                                title="Salary must be a whole number" pattern="[0-9]*" value="5678"><br>
+                            <span id="error-message-salary"></span>
+                            <br>
+
+                            <!-- *******employee gender******** -->
+                            <label>Gender <span id="asterik">*</span></label>
+                            <span id="gender-container">
+                                <span id="male-container">
+                                    <input type="radio" name="gender" id="male" value="Male">
+                                    <label for="male">Male</label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="gender" id="female" value="Female">
+                                    <label for="female">Female</label>
+                                </span>
+                            </span>
+
+                            <!-- ******submit and reset form details buttons***** -->
+                            <br><br>
+                            <div id="buttons">
+                                <input type="reset" value="Reset">
+                                <input type="submit" id="submitBtn">
+                            </div>
+                            <!-- <div id="btnContainer"></div> -->
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
+
+
+            <div>
+                <!-- ********right partition data********** -->
+                <img src=" images/right-image.png" alt="image" width="300px">
+            </div>
+        </div>
+
+        <!-- *******table to view employee list****** -->
+        <div id="table-display"></div>
+
+        <!-- ****footer********  -->
+        <div id="footer">
+            <p class="follow">Follow Us</p>
+            <div id="images">
+                <img src="images/youtube.png" alt="YouTube" class="social">
+                <img src="images/facebook-app-symbol.png" alt="Facebook" class="social">
+                <img src="images/twitter.png" alt="Twitter" class="social">
+                <img src="images/linkedin.png" alt="LinkedIn" class="social">
+            </div>
+        </div>
+
+        <br><br>
+        <hr width="50%" style="margin-left: 25%;" />
+        <p class="follow" style="font-size: x-small;">&#169 2024 Model, All rights reserved.</p>
+        <br>
+        <br>
+        <div id="top-line"></div>
+    </div>
+</body>
+
+</html>

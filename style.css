@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* images styling */
+/* accenture logo */
+#logo {
+    float: left;
+    width: 70px;
+    margin-left: 20px;
+    margin-top: 0;
+}
+
+/* left sided linkedin image */
+.social {
+    width: 14px;
+    cursor: pointer;
+}
+
+/* images from footer */
+#images {
+    margin-top: 10px;
+    width: 160px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* header row display */
+/* header holding image and 'employee details' text */
+header {
+    box-shadow: 2px 2px 100px rgb(234, 234, 240);
+    height: 75px;
+}
+
+/* 'employee details' text styles */
+#emp-head {
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+    font-weight: bolder;
+    font-size: small;
+}
+
+/* Line displayed abive and below for design */
+#top-line {
+    background-color: rgb(176, 16, 176);
+    height: 5px;
+    margin-bottom: 0;
+}
+
+/* main body container which holds all the main body data */
+#body-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* left side container text styles */
+#text-left {
+    width: 200px;
+    font-size: small;
+}
+
+/* form container */
+#container1 {
+    margin-top: 20px;
+}
+
+/* container holding the form  */
+fieldset {
+    /* margin-left: 400px; */
+    /* margin-right: 400px; */
+    border-radius: 8px;
+    border: 1px solid rgb(158, 155, 155);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* styling for all input types */
+/* label of form elements */
+label {
+    font-weight: 500;
+    font-size: small;
+}
+
+/* style for input boxes */
+input:not([type=radio]):not([type=submit]):not([type=reset]),
+select {
+    border: 1px solid rgb(158, 155, 155);
+    width: 400px;
+    height: 20px;
+    margin-top: 5px;
+    border-radius: 3px;
+    padding: 8px
+}
+
+/* dropdown designation input field */
+select {
+    width: 418px;
+    height: 39px;
+}
+
+/* container holding gender radio buttons */
+#gender-container {
+    margin-left: 80px;
+}
+
+#male-container {
+    margin-right: 80px;
+}
+
+/* input field radio */
+input[type="radio"] {
+    accent-color: black;
+}
+
+/* To display required field */
+#asterik {
+    color: red;
+}
+
+/* Buttons styling */
+/* buttons container */
+#buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* submit and reset buttons */
+input[type="reset"],
+input[type="submit"] {
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    cursor: pointer;
+    border: 1px solid black;
+    width: 180px;
+    height: 30px;
+    margin-top: 4px;
+    border-radius: 3px;
+}
+
+/* edit button */
+#editBtn {
+    background-color: green;
+    margin-right: 10px;
+}
+
+/* delete button */
+#deleteBtn {
+    background-color: rgb(190, 5, 5);
+}
+
+/* edit and delete button container layout */
+#buttonLayout {
+    display: flex;
+    width: fit-content;
+    border: none;
+}
+
+/* style for class holding edit and delete option */
+.options {
+    padding: 3px;
+    width: 70px;
+    height: 30px;
+    font-size: medium;
+    font-weight: 500;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* error message styling */
+#error-message-designation,
+#error-message-salary,
+#error-message-name {
+    font-size: x-small;
+    color: red;
+    font-weight: bold;
+}
+
+/* footer stylings */
+/* footer container */
+#footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* social media */
+.follow {
+    font-size: small;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* table stylings */
+/* table container display */
+#table-display {
+    display: flex;
+    justify-content: center;
+}
+
+/* table main heading */
+#heading-tab {
+    font-weight: 500;
+}
+
+/* table column headings */
+th {
+    padding: 10px;
+    color: rgb(200, 63, 200);
+    font-size: large;
+    text-align: left;
+}
+
+/* table rows and columns style */
+table,
+td,
+tr {
+    border: 1px solid rgb(158, 155, 155);
+    border-collapse: collapse;
+    padding: 10px;
+    margin: 15px;
+    width: 800px;
+    text-transform: capitalize;
+}
